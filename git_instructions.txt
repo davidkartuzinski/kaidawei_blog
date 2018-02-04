@@ -1,0 +1,37 @@
+How to use Git: (https://www.youtube.com/watch?v=HVsySz-h9r4&t=175s)
+
+A. git add -A   <-- will add all files
+or
+. git add -f <filename> <-- will add the file being updated
+
+
+B. git status <-- will confirm what will be committed
+
+C. git commit -m "put in a very descriptive message about what was commited"
+
+d. git pull origin master <-- this pulls down any changes made by others and is a good habit (for now)
+
+e. git push origin master <-- this push the code up to the master branch
+
+---
+
+WORKFLOW:
+
+1. Create a branch, for example, to work on the html structure.
+    $ git branch html-structure  <-- here "html-structure" is a random name
+
+2. Check which branches are available:
+    $ git branch
+
+3. Then checkout that branch so I can start working on it.
+    $ git checkout html-structure
+
+
+
+
+other commands:
+
+$ git reset   <-- this resets the commit
+$ git log <-- shows what just happened
+
+
