@@ -1,4 +1,6 @@
-How to use Git: (https://www.youtube.com/watch?v=HVsySz-h9r4&t=175s)
+How to use Git: (https://www.youtube.com/watch?v=HVsySz-h9r4&t=175s), (https://git-scm.com/book/en/v2)
+
+From the Git Command Line Console:
 
 A. git add -A   <-- will add all files
 or
@@ -26,6 +28,26 @@ WORKFLOW:
 3. Then checkout that branch so I can start working on it.
     $ git checkout html-structure
 
+4. Then after working, do a:
+    $ git add -A (to add all modified files), then
+    $ git commit -m "some message here"
+    $ git push -u origin html-structure
+        NOTE: if still working in the branch i can use $ git push or $ git pull without the -u...
+    $ git branch -a <-- to check this out and before to merge
+    $ git checkout master <-- this switches us from the branch to the master
+    $ git pull origin master <-- checks to see if others have pushed anything to the repository
+    $ git branch --merged <-- checks to see what branches have been merged or not - so far
+    $ git merge html-structure <-- "html-structure" would just be the name of whatever the branch is called
+    $ git push origin master <-- this pushes the branch to the master
+
+Next is to delete the branch which has been merged into the main branch:
+
+    $ git branch -merged <-- whatever shows up means it has already been merged into the master
+    $ git branch -d html-structure <-- this deletes the branch in the local machine
+    $ get branch -a <-- will verify that it is still in the repository
+    $ git push origin --delete html-structure <-deletes the branch from the repository
+    $ get branch -a <-- to verify it is gone!
+
 
 
 
@@ -33,5 +55,7 @@ other commands:
 
 $ git reset   <-- this resets the commit
 $ git log <-- shows what just happened
+$ git remote -v <-- gives information about repository
+$ git branch -a <-- gives information about all the branches (local and in the repository)
 
 
