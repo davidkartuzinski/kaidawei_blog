@@ -21,7 +21,7 @@ get_header();
         <header class="entry-header">
             <?php if( is_single() ) { ?>
                 <h1 class="entry-title">
-                    <?php the_title(); ?> IS THIS WORKING
+                    <?php the_title(); ?>
                 </h1>
             <?php } else { ?>
                 <h2 class="entry-title">
