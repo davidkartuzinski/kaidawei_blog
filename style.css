@@ -1,0 +1,87 @@
+/*
+Theme Name: Atomic Blocks Child Theme
+Theme URI: https://arraythemes.com/themes/atomic-blocks-wordpress-theme/
+Author: Array
+Author URI: https://arraythemes.com/
+Description: Child theme for the Atomic Blocks theme by Array.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: atomic-blocks
+Domain Path: /languages/
+Template: atomic-blocks-theme
+Tags: featured-images, theme-options, custom-background, custom-logo, editor-style, custom-colors, custom-menu, translation-ready, full-width-template, post-formats, blog, photography, portfolio
+
+(C) 2018 Array, Inc.
+*/
+
+/*
+This is a starter style.css file for your child theme. For more
+information about child themes, visit the following web page:
+http://codex.wordpress.org/Child_Themes
+*/
+
+/* Add your CSS customizations below this line   #FF9B06 accent */
+
+/* COLOR SCHEME
+
+ORANGE #FF9B06
+OFF WHITE #FDFDFD
+LIGHT GREY #424242
+DARK GREY #272c30
+PURPLE #7166ee
+*/
+
+
+/* GENERAL */
+
+.container {padding: 0 5%;}
+.site-identity {padding: 1.5% 0;}
+/* FONT */
+
+body, button {font-family: 'Fira Mono', Helvetica, Arial, sans-serif;}
+h1, h2, h3, h4, h5, h6  {font-family: 'Domine', serif;}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.comment-navigation a,
+#page #infinite-handle button {font-family: 'Fira Mono', Helvetica, Arial, sans-serif;}
+.comment-time, .comment-edit-link {font-family: 'Fira Mono', Helvetica, Arial, sans-serif;}
+.logged-in-as, .comment-notes {font-family: 'Fira Mono', Helvetica, Arial, sans-serif;}
+
+/* COLORS ON WEBSITE */
+
+body {/* for general background of text */ background-color:     #FDFDFD; color: #424242; }
+h1, h2, h3, h4, h5, h6  {color: #272c30;}
+
+.site-header, .site-footer {background-color: #7166ee;}
+
+.main-navigation ul li.current-menu-item a, .main-navigation ul li.current-page-item a {color:#FF9B06;}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+.comment-navigation a,
+#page #infinite-handle button {color: #ff9B06;}
+
+#page .more-link {color: #272c30; border-color: #272c30;}
+#page .more-link:hover {color: #424242; border-color: #424242; border: dashed 2px; }
+
+
+
+.top-navigation {background-image: url('https://kaidawei.me/wp-content/themes/atomic-blocks-theme-child/img/connected.png');
+background-repeat: repeat;}
+
+
+/* MOBILE */
+
+@media (max-width: 1000px) {
+.mobile-navigation { background-color: #7166ee; }
+
+}
+
+#5a3fd6
