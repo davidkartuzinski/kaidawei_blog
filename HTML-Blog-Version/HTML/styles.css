@@ -1,0 +1,242 @@
+/*
+Theme Name: KaiDaWei Custom Theme
+Theme URI: Kaidawei.me
+Author: David Kartuzinski, Charles Allen Harris (designer)
+Author URI: https://kaidawei.me, https://www.caharris.com/webui/
+Description: Personal Theme design
+Version: 1.0
+Template: kaidawei-me
+
+(C) 2018 David Kartuzinski
+*/
+
+/* COLOR SCHEME
+
+ORANGE #FF9B06 lighter: #f38d5b;
+A* - OFF WHITE #fff7f2
+A* - LIGHT GREY #808080
+DARK GREY #272c30
+PURPLE #7166ee
+black: #040001;
+A* - orange font: #e66722;
+*/
+/* FONTS
+
+font-family: 'Arvo', serif;
+font-family: 'Bowlby One', cursive;
+*/
+
+/* Image sizes */
+
+/*240 is max width for images at 360 viewport width*/
+
+
+/* Structural */
+    /* General  */
+
+    body {background-image: url('img/bg-250x.png'); background-repeat: repeat; background-color: #fff7f2;}
+    header.border, .main {background-color: #f28149;}
+    section {position: relative;}
+
+    /* HEADER & TOP MENU */
+
+    header {margin: 0 auto; width: 92%; padding: 0 2%; max-width: 800px;}
+    .navbar {width: 100%; min-height: 6em; }
+    .navbar, .navbar-items {display: flex; flex-direction: column;}
+    .navbar-items {display: none;}
+    .navbar-items li {padding: 0 .8rem 0 .8rem;}
+    .navbar-link-brand {background-image: url("../img/kaidawei-logo.svg"); width: 202px; height: 38px; background-repeat: no-repeat;margin-top:1.2em;}
+    .navbar-link-brand-desktop {display: none;}
+    .navbar-link-toggle-div {align-self: flex-end; display: initial; position:absolute; cursor: pointer; align-items: center; justify-content: center;min-height: 5em; padding-top: 2em;}
+    .navbar-link-toggle { box-sizing: content-box; width: 25px;padding-top: 4px;padding-bottom: 4px;border-top: 4px solid #040001;border-bottom: 4px solid #000000; }
+    .navbar-link-toggle:before {content: "";display: block;width: 100%;height: 4px;background-color: #040001;}
+    .navbar-link-toggle-show {display:flex; margin-top:1em; background-color:#f38d5b;}
+
+    @media only screen and (min-width: 768px) {
+        header {margin: 0 auto; width: 85%; padding: 0 5%; max-width: 800px;}
+        .navbar {padding-top: 1em;min-height: 2em;}
+        .navbar, .navbar-items {flex-direction: row; justify-content: center; align-items: center;}
+        .navbar-items {display: flex;}
+        .navbar-items li {padding: 0 3.4rem 0 3.4rem;}
+        .navbar-link-brand {display: none;}
+        .navbar-link-brand-desktop {background-image: url("../img/kaidawei-site-logo-horinzontal-white.png"); width: 320px; height: 60px; background-repeat: no-repeat;margin:1.2em auto 0; display: flex; background-size: 320px 60px;}
+        .navbar-link-toggle {display:none;}
+        .navbar-link-toggle-show  {margin-top: 0;}
+    }
+
+    /* MAIN AND ARTICLE */
+    .main {margin: 0 auto; width: 96%; padding:0; max-width: 800px;}
+
+
+    @media only screen and (min-width: 768px) {
+
+        .main {margin: 0 auto; width: 85%; padding: 0 5%; max-width: 800px;}
+    }
+
+    /* BELOW MAIN ARTICLE */
+    footer {background-color: #f38d5b;width: 100%; margin: 0 auto; text-align:center;}
+    footer nav > img {text-align: center; position:relative; top: -75px; margin-bottom: -70px;}
+    footer nav {border-top:#040001 solid .8em; width: 100%;margin-bottom:3em;}
+    aside {background-color: #fff7f2; padding: 0 0 1.5em 0;}
+    .social {width: 300px; margin: 0 auto; display: inline-block; position: relative;padding-bottom: 8em;}
+    .social li {float: left; width: 100px; text-align: center;}
+    footer h3 {text-align: center;}
+    .footer-bottom {text-align: center;}
+    .footer-bottom img:first-child {margin-top: -46px;}
+    .privacy {background-color:#f28149; height: 1.5em; border-top:#040001 solid .1em; padding-top: .25em; margin-top: 4em;}
+
+    @media only screen and (min-width: 768px) {
+
+
+    }
+
+
+/* Typography */
+
+/*https://websemantics.uk/tools/responsive-font-calculator/ DO THIS AT THE END */
+
+html {font-size:62.5%;}
+body {font-family: 'Arvo', serif; font-weight: 400; color: #424242;}
+h1, h2, h3, h4, h5, h6  {font-family: 'Bowlby One', cursive; color: #272c30;}
+article header h1 {font-size: 2.2rem; color: #040001; text-transform: uppercase; text-align: center; padding-top: .5em; padding-bottom: .5em; line-height: 2.6rem;}
+article header ul li  {font-size: 1.45rem; color: #040001; text-transform: uppercase; line-height: 2rem; text-align: center;}
+article h2 {font-family: 'Bowlby One', cursive; font-size: 2.2rem; line-height: 2.6rem; color: #e66722; text-align: center; padding: .5em 0; }
+article h3, h3 {font-family: 'Bowlby One', cursive; font-size: 2.2rem; line-height: 2.6rem; color: #808080; text-align: center; padding: .5em 0; width: 90%; margin: 0 auto;}
+article h4, h4 {font-family: 'Bowlby One', cursive; font-size: 1.6rem; line-height: 2.2rem; color: #808080; text-align: center; padding: .5em 0; width: 90%; margin: 0 auto;}
+article p, p {font-family: 'Arvo', serif; font-weight: 400; font-size: 1.5rem; line-height: 2.2rem; width: 90%; margin: 0 auto; text-align: center; padding-top: 1em; padding-bottom: 1em; }
+article section p a, p a {font-size: 1.7rem; line-height: 2.2rem;}
+article section p a, p a:link {color: #272c30;;}
+article section p a:visited, p a:visited {color: #272c30;;}
+article section p a:hover, p a:hover {color: #808080;}
+article section p a:active, p a:active {color: #040001;}
+article blockquote, blockquote {font-family: 'Arvo', serif; font-weight: bold; font-size: 1.5rem; line-height: 2.2rem; width: 90%; display: grid; margin: 0 auto; text-align: center; padding-top: 1em; padding-bottom: 1em; color: #808080;}
+article cite, cite {font-family: 'Arvo', serif; font-weight: 900; font-size: 1.5rem; line-height: 2.2rem; width: 90%; display: grid; margin: 0 auto; text-align: center; padding-top: 1em; padding-bottom: 1em; color: #808080; font-style: italic;}
+article section ul li {font-family: 'Arvo', serif; font-weight: 400; font-size: 1.5rem; line-height: 2.2rem; width: 90%; text-align: center; color: #272c30;}
+article section ul li a{font-family: 'Arvo', serif; font-weight: 900; font-size: 1.8rem; line-height: 2.2rem; width: 90%; text-align: center; color:#272c30; }
+article section ul li a:link {color: #272c30;;}
+article section ul li a:visited {color: #272c30;;}
+article section ul li a:hover {color: #808080;}
+article section ul li a:active {color: #040001;}
+aside > div {width: 90%; text-align: center; margin:0 auto;}
+aside ul li {font-family: 'Arvo', serif; font-weight: 400; font-size: 1.5rem; line-height: 2.2rem; width: 90%; text-align: center; color: #272c30; padding-bottom: .5em;}
+aside ul li a{font-family: 'Arvo', serif; font-weight: 900; font-size: 1.8rem; line-height: 2.2rem;  text-align: center; color:#272c30; width: 210px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;padding-top: .5em; display: block; margin: 0 auto;}
+aside ul li a:visited {color: #272c30;;}
+aside ul li a:hover {color: #808080;}
+aside ul li a:active {color: #040001;}
+aside ul li a span {font-weight: 900; font-size: 1.2rem;}
+body > aside h2 {font-family: 'Bowlby One', cursive; font-size: 2.2rem; line-height: 2.6rem; color: #e66722; text-align: center; padding: .5em 0; }
+footer h3 {font-family: 'Arvo', serif; font-weight: 900; font-size: 1.8rem; line-height: 2.0rem; text-align: center; padding: .5em 0; width: 90%; margin: 0 auto;color:#040001; text-transform: uppercase; }
+.navbar-footer .navbar-items {display:flex;}
+
+@media only screen and (min-width: 768px) {
+    article {background-image: url("img/big-k-circle.png"); background-repeat: no-repeat; background-position: center 20px;background-size: 700px 700px;}
+    article header h1 {font-size: 3.2rem; color: #040001; text-transform: uppercase;padding-top: 1em; padding-bottom: .5em;}
+    article h2 {font-family: 'Bowlby One', cursive; font-size: 3.2rem; line-height: 3.2rem; color: #e66722; text-align: center; padding: .5em 0;}
+    article h3 {font-family: 'Bowlby One', cursive; font-size: 3.2rem; line-height: 3.2rem; color: #808080; text-align: center; padding: .5em 0; }
+    article h4 {font-family: 'Bowlby One', cursive; font-size: 2.4rem; line-height: 3.2rem; color: #808080; text-align: center; padding: .5em 0; }
+}
+
+    /* TOP MENU */
+
+    .navbar li {list-style: none; text-align:center;}
+    .navbar a {text-decoration: none; font-size: 1.8rem;}
+    .navbar a:link {color: black; font-family: 'Arvo', serif; font-weight: 700;}
+    .navbar a:visited {color: black;}
+    .navbar a:hover {color: #e66722 ;}
+    .navbar ul li.current-menu-item a, .main-navigation ul li.current-page-item a {color:#fff7f2}
+    .navbar ul li a {line-height: 1.4;}
+
+
+    @media only screen and (min-width: 768px) {
+      .navbar ul li a {line-height: 1;}
+    }
+
+
+    /* Bottom MENU */
+
+    footer .navbar-footer li {list-style: none; text-align:center;}
+    footer .navbar-footer a {text-decoration: none; font-size: 1.6rem;}
+    footer .navbar-footer a:link {color: black; font-family: 'Arvo', serif; font-weight: 700;}
+    footer .navbar-footer a:visited {color: black;}
+    footer .navbar-footer a:hover {color: #e66722 ;}
+    footer .navbar-footer ul li.current-menu-item a, .main-navigation ul li.current-page-item a {color:#fff7f2}
+    footer .navbar-footer ul li a {line-height: 1.4;}
+
+
+    @media only screen and (min-width: 768px) {
+      .navbar-footer  .navbar ul li a {line-height: 1;}
+    }
+
+    /* ABOVE CONTENT */
+
+    article {background-image: url("img/big-k-circle.png"); background-repeat: no-repeat; background-position: center 5px; background-size: 368px 368px; padding: 0 2%; }
+    article header {margin-bottom: 1.5em; }
+
+    @media only screen and (min-width: 768px) {
+        article {background-image: url("img/big-k-circle.png"); background-repeat: no-repeat; background-position: center 20px;background-size: 700px 700px;}
+    }
+
+    /* CONTENT */
+
+    article section {background-color: #fff7f2; padding: 1.5em 0 1.5em 0;}
+    section img {text-align: center; margin:0 auto 1.5em; display: grid; }
+    .img-10 {border: white solid 14px; z-index: 2; /*max-with: 300px; left: 250px; top: 15px;*/ -webkit-box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.2);}
+    .img-5 {border: white solid 7px; z-index: 2; /*max-with: 300px; left: 250px; top: 15px;*/ -webkit-box-shadow: 5px 5px 5px -5px rgba(0,0,0,0.2);}
+
+     @media only screen and (min-width: 768px) {
+
+     }
+
+     /* BACKGROUND IMAGE */
+
+     article .bottom-bg {
+        background: url('IMG/burst-right-bottom.png');
+        -webkit-transform: rotate (00deg);
+        transform: rotate(0deg);
+        height: 100px;
+        width: 99.8%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+     }
+
+     article .bottom-bg-margin {margin-bottom: -70px;}
+
+       article .top-bg {
+        background: url('IMG/burst-right-top.png');
+        -webkit-transform: rotate (0deg);
+        transform: rotate(0deg);
+        height: 35px;
+        width: 99.8%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center top;
+     }
+     article .bottom-bg-a {
+        background: url('IMG/burst-left-bottom.png');
+        -webkit-transform: rotate (00deg);
+        transform: rotate(0deg);
+        height: 55px;
+        width: 99.8%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+     }
+
+       article .top-bg-a {
+        background: url('IMG/burst-left-top.png');
+        -webkit-transform: rotate (0deg);
+        transform: rotate(0deg);
+        height: 100px;
+        width: 99.8%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center top;
+     }
+
+
+
+
+     @media only screen and (min-width: 768px) {
+
+     }
