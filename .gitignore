@@ -98,3 +98,8 @@ Thumbs.db
 
 # ignore node/grunt dependency directories
 node_modules/
+
+# ignore gulp and browser-sync files
+gulpfile.js
+package-lock.json
+package.json

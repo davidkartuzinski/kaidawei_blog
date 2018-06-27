@@ -20,7 +20,7 @@ add_action( 'wp_enqueue_scripts', 'atomic_blocks_parent_theme_style' );
  * Add additional functions below
  */
 
-/* REVISIONS TO POSTS */
+/* REVISIONS TO POSTS  */
 
 define('WP_POST_REVISIONS', 3);
 
@@ -35,7 +35,7 @@ add_action( 'wp_print_styles', 'project_dequeue_unnecessary_styles' );
 
 
 function custom_add_google_fonts() {
-wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Domine:700|Fira+Mono:400,700&amp;subset=latin-ext', false );
+wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Arvo:400,400i,700|Bowlby+One', false );
 }
 add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
 
