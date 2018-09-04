@@ -1,14 +1,14 @@
 /*
-	Theme Name: HTML5 Blank
-	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
-	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
-	Author URI: http://toddmotto.com
-	Tags: Blank, HTML5, CSS3
+	Theme Name: Kia Dawei Personal Blog
+	Theme URI: https://github.com/davidkartuzinski/kaidawei_blog
+	Description: Personal blog theme for Kaidawei.me
+	Version: 1.0
+	Author: David Kartuzinski
+	Author URI: https://github.com/davidkartuzinski/
 
-	License: MIT
-	License URI: http://opensource.org/licenses/mit-license.php
+	License: None
+
+	This theme is available for your review. All images and design are Copyright. Thanks for your interest.
 */
 
 /* NORMALIZE CSS */
@@ -670,20 +670,34 @@ textarea {
 	height: 200px;
 	margin-top: 5px;
 }
-.wpcf7 ul {font-size: 1em;color: #ff0000;}
-.screen-reader-response {width: 90%;}
-.wpcf7-response-output, .screen-reader-response {font-size: 1.4em;color: #ff0000;}
- .wpcf7-not-valid-tip {color: #ff0000;}
+
+.wpcf7 ul {
+	font-size: 1em;
+	color: #ff0000;
+}
+
+.screen-reader-response {
+	width: 90%;
+}
+
+.wpcf7-response-output, .screen-reader-response {
+	font-size: 1.4em;
+	color: #ff0000;
+}
+
+.wpcf7-not-valid-tip {
+	color: #ff0000;
+}
 
 /* ==========================================================================
    Buttons from Gutenberg Styles
    ========================================================================== */
 
-   .wp-block-button {
-	   margin-bottom: 0;
-   }
+.wp-block-button {
+	margin-bottom: 0;
+}
 
-   .wp-block-button .wp-block-button__link, .wp-block-button__link:not(.has-background) {
+.wp-block-button .wp-block-button__link, .wp-block-button__link:not(.has-background) {
 	cursor: pointer;
 	border: none;
 	padding: 12px 0px;
@@ -706,14 +720,22 @@ textarea {
 	word-break: break-all;
 	z-index: 5;
 }
-	.wp-block-button__link:not(.has-background):active, .wp-block-button__link:not(.has-background):focus, .wp-block-button__link:not(.has-background):hover {
+
+.wp-block-button__link:not(.has-background):active, .wp-block-button__link:not(.has-background):focus, .wp-block-button__link:not(.has-background):hover {
 	background-color: #555;
-   }
-   .wp-block-button__link:not(.has-text-color), .wp-block-button__link:not(.has-text-color):active, .wp-block-button__link:not(.has-text-color):focus, .wp-block-button__link:not(.has-text-color):hover {
-	   color: #fff;
-   }
+}
+
+.alt-btn-color .wp-block-button__link, 
+.alt-btn-color .wp-block-button__link:not(.has-background) {
+	background-color: #555;
+}
+
+.alt-btn-color .wp-block-button__link:not(.has-background):active, .alt-btn-color .wp-block-button__link:not(.has-background):focus, .alt-btn-color .wp-block-button__link:not(.has-background):hover  {background-color: #e66722;}
 
 
+.wp-block-button__link:not(.has-text-color), .wp-block-button__link:not(.has-text-color):active, .wp-block-button__link:not(.has-text-color):focus, .wp-block-button__link:not(.has-text-color):hover {
+	color: #fff;
+}
 
 /*------------------------------------*\
     STRUCTURE
@@ -855,12 +877,11 @@ nav {}
 .upper-footer div .left-footer-nav {
 	justify-content: center;
 	min-width: 300px;
-	padding-right: 80px;
+	padding-right: 136px;
 	padding-left: 0px;
 }
 
 .upper-footer div .right-footer-nav {
-
 	min-width: 350px;
 	padding-right: 0px;
 	padding-left: 90px;
@@ -951,26 +972,19 @@ nav {}
 	width: 700px;
 	min-width: 90%;
 	z-index: 25;
-
-
 	display: grid;
 	grid-template-columns: 175px;
 	grid-template-rows: auto;
 	grid-gap: 0;
 	grid-auto-rows: 1fr;
 	grid-auto-flow: rows;
-
-	grid-template-areas:
-		"top1 top1 top1 top1"
-		"img1 img1 img1 img1";
-
+	grid-template-areas: "top1 top1 top1 top1" "img1 img1 img1 img1";
 }
 
 .wp-block-gallery .blocks-gallery-image figure, .wp-block-gallery .blocks-gallery-item figure {
 	margin: 0;
 	height: 100%;
- 	display: grid; 
-
+	display: grid;
 }
 
 .wp-block-gallery .blocks-gallery-image::before, .wp-block-gallery .blocks-gallery-item::before {
@@ -991,17 +1005,19 @@ nav {}
 }
 
 .wp-block-gallery .blocks-gallery-image:first-child, .wp-block-gallery .blocks-gallery-item.active {
-	width:665px;
+	width: 665px;
 	grid-column: 1 / -1;
 	grid-row: top1;
-	
 }
+
 .wp-block-gallery.columns-3 .blocks-gallery-image, .wp-block-gallery.columns-3 .blocks-gallery-item, .wp-block-gallery.columns-3 .blocks-gallery-item {
-	width: 150px!important;	
+	width: 150px!important;
 }
+
 .wp-block-gallery.columns-3 .blocks-gallery-image.active, .wp-block-gallery.columns-3 .blocks-gallery-item.active, .wp-block-gallery.columns-3 .blocks-gallery-item.active {
-	width: 665px!important;	
+	width: 665px!important;
 }
+
 .wp-block-gallery .blocks-gallery-image, .wp-block-gallery .blocks-gallery-item {
 	width: 295px;
 	justify-content: center;
@@ -1009,18 +1025,19 @@ nav {}
 	margin: 10px 10px;
 	cursor: pointer;
 }
- /* .wp-block-gallery .blocks-gallery-image:visited, .wp-block-gallery .blocks-gallery-item:visited,
+
+/* .wp-block-gallery .blocks-gallery-image:visited, .wp-block-gallery .blocks-gallery-item:visited,
 .wp-block-gallery .blocks-gallery-image:hover, .wp-block-gallery .blocks-gallery-item:hover, */
-.wp-block-gallery .blocks-gallery-image.active, .wp-block-gallery .blocks-gallery-item.active{
-	width:665px;
+
+.wp-block-gallery .blocks-gallery-image.active, .wp-block-gallery .blocks-gallery-item.active {
+	width: 665px;
 	grid-column: 1 / -1;
 	grid-row: top1;
-} 
+}
 
 .wp-block-gallery.is-cropped .blocks-gallery-image a, .wp-block-gallery.is-cropped .blocks-gallery-image img, .wp-block-gallery.is-cropped .blocks-gallery-item a, .wp-block-gallery.is-cropped .blocks-gallery-item.active img {
 	flex: 1;
-
-	 height: auto;
+	height: auto;
 	-o-object-fit: cover;
 	object-fit: cover;
 	max-width: unset;
@@ -1036,7 +1053,6 @@ nav {}
 }
 
 /* Gallery Caption */
-
 
 .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
 	position: relative;
@@ -1057,7 +1073,7 @@ nav {}
 	width: 100%;
 	max-height: 100%;
 	overflow: auto;
-	padding: 5px 10px 5px; 
+	padding: 5px 10px 5px;
 	color: #FFF;
 	text-align: center;
 	font-size: 16px;
@@ -1065,14 +1081,15 @@ nav {}
 	z-index: 7;
 	line-height: 2em;
 }
+
 .wp-block-gallery .blocks-gallery-image, .wp-block-gallery .blocks-gallery-item figcaption {
 	height: 20px;
-
 }
 
 .wp-block-gallery .blocks-gallery-image.active, .wp-block-gallery .blocks-gallery-item.active figcaption {
 	height: 40px;
 }
+
 /*.wp-block-gallery .blocks-gallery-image figcaption:hover, .wp-block-gallery .blocks-gallery-item figcaption:hover {
 background: #555;
 cursor: pointer;
@@ -1270,6 +1287,8 @@ article>p, article>code, article>kbd, article>pre, article>samp, article>ul, art
 	grid-column-start: center;
 	background-color: #fff7f2;
 	margin: 0;
+	position: relative;
+	z-index: 6;
 }
 
 /* =======================================
@@ -1306,7 +1325,7 @@ article>figure.leftbottom {
 	width: -webkit-max-content;
 }
 
-article>figure>img,article>figure>a   {
+article>figure>img, article>figure>a {
 	padding: 10px;
 	background-color: #fff;
 	position: relative;
@@ -1322,7 +1341,7 @@ article>figure>img,article>figure>a   {
 	margin-top: 115px;
 }
 
-article>figure.leftbottom >img, article>figure.leftbottom >a  {
+article>figure.leftbottom>img, article>figure.leftbottom>a {
 	padding: 10px;
 	background-color: #fff;
 	position: relative;
@@ -1536,7 +1555,7 @@ article>figure.is-type-video {
 	margin: 0 auto;
 }
 
-.blogroll .acf-introduction form, .blogroll .acf-introduction-search form  {
+.blogroll .acf-introduction form, .blogroll .acf-introduction-search form {
 	padding: 0em 1em .5em;
 	margin: 35px auto 0;
 	background: #fff7f2;
@@ -1553,7 +1572,7 @@ article>figure.is-type-video {
 	left: unset;
 }
 
-.blogroll .acf-introduction form .search-submit, .blogroll .acf-introduction-search form .search-submit  {
+.blogroll .acf-introduction form .search-submit, .blogroll .acf-introduction-search form .search-submit {
 	width: 300px;
 }
 
@@ -1631,8 +1650,6 @@ article>figure.is-type-video {
 	background-color: #fff7f2;
 	padding-top: 150px;
 }
-
-
 
 /* SINGLE POST STYLING*/
 
@@ -1926,7 +1943,7 @@ footer {
 }
 
 .upper-footer {
-	background: transparent url('img/dk-circle.logo-bottom.svg') no-repeat center top;
+	background: transparent url('img/dk-logo-circle-bottom.png') no-repeat center top;
 	height: 150px;
 	margin-top: -80px;
 	z-index: 100;
@@ -2252,23 +2269,29 @@ a img.aligncenter {
 
 /* COMPUTER */
 
-.b4-computer {z-index: 6;padding-bottom: 20px; margin-bottom:-496px;height: 660px;}
+.b4-computer {
+	z-index: 6;
+	padding-bottom: 20px;
+	margin-bottom: -496px;
+	height: 660px;
+}
 
 .computer-container-container {
-	background-image:  url('img/burst-left-top.png'), url('img/burst-left-bottom.png');
+	background-image: url('img/burst-left-top.png'), url('img/burst-left-bottom.png');
 	background-position: top left, bottom left;
 	background-repeat: no-repeat;
 	background-color: transparent;
 	padding: 20px 0 10px 20px;
 	grid-column: 1 / -1;
 	position: relative;
-	height:710px;
+	height: 710px;
 	margin-left: -38px;
 	display: grid;
 	margin-top: -108px;
-	margin-bottom:-126px;
+	margin-bottom: -126px;
 	padding-top: 56px;
 }
+
 .computer-container {
 	width: 580px;
 	margin: 0px auto;
@@ -2282,85 +2305,85 @@ a img.aligncenter {
 	padding: 20px 30px;
 	left: -74px;
 	-webkit-box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
--moz-box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
-box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
+	box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	border: 10px solid #fff;
 	z-index: 6;
+}
 
-  }
+.computer-container ul {
+	font-size: 1.2em;
+	padding: 0px;
+	display: none;
+}
 
-  .computer-container ul {
-	  font-size: 1.2em;
-	  padding: 0px;
-	  display: none;
-  }
+.computer-container ul li::before {
+	content: "";
+}
 
-  .computer-container ul li::before{content:"";}
-  
-  .computer-container > .computer-screen {
+.computer-container>.computer-screen {
 	width: 460px;
 	height: 280px;
-	position: relative;  
+	position: relative;
 	background: #ff6860;
 	border: 20px solid #474e5d;
 	border-radius: 10px;
 	left: 18px;
-  }
-  
-  .computer-monitor > div {
+}
+
+.computer-monitor>div {
 	position: absolute;
-  }
-  
-  .computer-monitor:before,
-  .computer-monitor:after,
-  .computer-laptop:before{
-	 content: "";
-	 position: absolute;
-	 left: 50%;
-   }
-  
-  .computer-monitor:before,
-  .computer-laptop:before {
+}
+
+.computer-monitor:before, .computer-monitor:after, .computer-laptop:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+}
+
+.computer-monitor:before, .computer-laptop:before {
 	top: -10px;
 	margin: -3px 0 0 -3px;
 	width: 6px;
 	height: 6px;
 	border-radius: 6px;
 	background: #222;
-  }
-  
-  .computer-screen:after {
+}
+
+.computer-screen:after {
 	width: 8px;
 	height: 8px;
 	border-radius: 8px;
 	bottom: -10px;
 	margin: 0 0 -4px -4px;
 	background: #e8ebf0;
-  }
-  
-  .computer-content {
+}
+
+.computer-content {
 	width: 420px;
 	height: 240px;
 	left: 50%;
 	margin-left: -210px;
 	overflow: hidden;
 	background: url('img/desktop-pantheon.jpg') no-repeat transparent;
-  }
-  
-  .computer-laptop > .computer-content {background: url('img/laptop-pantheon.jpg') no-repeat transparent;}
+}
 
-  .computer-content:before {
+.computer-laptop>.computer-content {
+	background: url('img/laptop-pantheon.jpg') no-repeat transparent;
+}
+
+.computer-content:before {
 	content: "";
 	position: absolute;
 	right: -90px;
 	width: 200px;
 	height: 300px;
 	transform: rotate(45deg);
-	background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
 	z-index: 5;
-  }
-  
-  .computer-pg {
+}
+
+.computer-pg {
 	width: 240px;
 	height: 180px;
 	position: absolute;
@@ -2373,15 +2396,15 @@ box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	border-radius: 5px;
 	box-shadow: 0 5px 0 #e0625e;
 	display: none;
-  }
-  
-  .computer-btns {
+}
+
+.computer-btns {
 	position: absolute;
 	top: -20px;
 	left: 7px;
-  }
-  
-  .computer-btns:before {
+}
+
+.computer-btns:before {
 	content: "";
 	position: absolute;
 	left: 35px;
@@ -2390,158 +2413,152 @@ box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	width: 185px;
 	background: #fff;
 	border-radius: 3px;
-  }
-  
-  .computer-btns > li {
-	display: inline-block; 
+}
+
+.computer-btns>li {
+	display: inline-block;
 	list-style: none;
 	width: 5px;
 	height: 5px;
 	border-radius: 5px;
 	background: #fc5254;
 	margin-right: 4px;
-  }
-  
-  .computer-btns li:nth-child(2) {
-	 background: #fcae52; 
-  }
-  
-  .computer-btns li:nth-child(3) {
-	 background: #66b34e; 
-  }
-  
-  .computer-txt {
-	 margin: 10px auto; 
+}
+
+.computer-btns li:nth-child(2) {
+	background: #fcae52;
+}
+
+.computer-btns li:nth-child(3) {
+	background: #66b34e;
+}
+
+.computer-txt {
+	margin: 10px auto;
 	width: 220px;
-  }
-  
-  .computer-txt > li {
+}
+
+.computer-txt>li {
 	background: #f3f5f7;
 	width: 100%;
 	height: 15px;
 	margin-bottom: 9px;
-  }
-  
-  .computer-txt > li:nth-child(2) {
+}
+
+.computer-txt>li:nth-child(2) {
 	height: 60px;
-  }
-  
-  .computer-txt > .computer-thin {
+}
+
+.computer-txt>.computer-thin {
 	height: 43px;
 	width: 30%;
 	margin-right: 6px;
-	display: inline-block;  
-  }
-  
-  .computer-txt > li:nth-child(5) {
+	display: inline-block;
+}
+
+.computer-txt>li:nth-child(5) {
 	margin-right: 0;
-  }
-  
-  .computer-base {
+}
+
+.computer-base {
 	width: 90px;
 	height: 50px;
 	bottom: -70px;
 	left: 50%;
 	margin-left: -45px;
 	background: #e8ebf0;
-  }
-  
-  .computer-base:before,
-  .computer-base:after,
-  .computer-grey-shadow:before,
-  .computer-grey-shadow:after{
+}
+
+.computer-base:before, .computer-base:after, .computer-grey-shadow:before, .computer-grey-shadow:after {
 	content: "";
 	position: absolute;
 	top: 0;
-  }
-  
-  .computer-base:before {
+}
+
+.computer-base:before {
 	border-left: 13px solid transparent;
 	border-right: 0px solid transparent;
 	border-bottom: 50px solid #e8ebf0;
 	left: -13px;
-  }
-  
-  .computer-base:after {
+}
+
+.computer-base:after {
 	border-right: 13px solid transparent;
 	border-left: 0px solid transparent;
 	border-bottom: 50px solid #e8ebf0;
 	right: -13px;
-  }
-  
-  .computer-base > div {
-	 position: absolute; 
-  }
-  
-  .computer-grey-shadow {
+}
+
+.computer-base>div {
+	position: absolute;
+}
+
+.computer-grey-shadow {
 	width: 90px;
 	height: 12px;
 	background: #d8dbe1;
 	top: 0;
-  }
-  
-  .computer-grey-shadow:before {
+}
+
+.computer-grey-shadow:before {
 	border-left: 3px solid transparent;
 	border-right: 0px solid transparent;
 	border-bottom: 12px solid #d8dbe1;
 	left: -3px;
 	z-index: 2
-  }
-  
-  .computer-grey-shadow:after {
+}
+
+.computer-grey-shadow:after {
 	border-right: 3px solid transparent;
 	border-left: 0px solid transparent;
 	border-bottom: 12px solid #d8dbe1;
 	right: -3px;
 	z-index: 2
-  }
-  
-  .computer-foot {
+}
+
+.computer-foot {
 	background: #e8ebf0;
 	z-index: 0;
-  }
-  
-  .computer-foot.computer-top {
+}
+
+.computer-foot.computer-top {
 	width: 116px;
 	height: 5px;
 	bottom: -5px;
 	left: 50%;
 	margin-left: -58px;
-  }
-  
-  .computer-foot.computer-top:before,
-  .computer-foot.computer-top:after,
-  .computer-foot.computer-bottom:before {
+}
+
+.computer-foot.computer-top:before, .computer-foot.computer-top:after, .computer-foot.computer-bottom:before {
 	content: "";
 	position: absolute;
 	top: 0px;
-  }
-  
-  .computer-foot.computer-top:before {
+}
+
+.computer-foot.computer-top:before {
 	border-left: 16px solid transparent;
 	border-right: 0px solid transparent;
 	border-bottom: 5px solid #e8ebf0;
 	left: -16px;
-  }
-  
-  .computer-foot.computer-top:after {
+}
+
+.computer-foot.computer-top:after {
 	border-right: 16px solid transparent;
 	border-left: 0px solid transparent;
 	border-bottom: 5px solid #e8ebf0;
 	right: -16px;
-  }
-  
-  
-  .computer-foot.computer-bottom {
+}
+
+.computer-foot.computer-bottom {
 	width: 150px;
 	height: 5px;
 	bottom: -10px;
 	left: 50%;
 	margin-left: -75px;
 	z-index: 0;
-  }
-  
-  .computer-laptop {
+}
+
+.computer-laptop {
 	width: 235px;
 	height: 155px;
 	background: #999;
@@ -2551,41 +2568,41 @@ box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	top: 256px;
 	right: 80px;
 	border-bottom: 1px solid #222;
-  }
-  
-  .computer-laptop:before {
-   top: -6px;
-  }
-  
-  .computer-laptop > div {
-	position: absolute; 
-  }
-  
-  .computer-laptop > .computer-content {
+}
+
+.computer-laptop:before {
+	top: -6px;
+}
+
+.computer-laptop>div {
+	position: absolute;
+}
+
+.computer-laptop>.computer-content {
 	width: 211px;
 	height: 131px;
 	left: 0;
 	margin-left: 0;
-  }
-  
-  .computer-txt-laptop {
-	 width: 189px; 
-  }
-  
-  .computer-txt-laptop > li {
+}
+
+.computer-txt-laptop {
+	width: 189px;
+}
+
+.computer-txt-laptop>li {
 	background: #fda566;
-  }
-  
-  .computer-txt-laptop > li:nth-child(2) {
+}
+
+.computer-txt-laptop>li:nth-child(2) {
 	height: 41px;
-  }
-  
-  .computer-txt-laptop > .computer-thin {
+}
+
+.computer-txt-laptop>.computer-thin {
 	height: 36px;
 	margin-right: 5px;
-  }
-  
-  .computer-btm {
+}
+
+.computer-btm {
 	width: 296px;
 	height: 7px;
 	bottom: -8px;
@@ -2594,21 +2611,21 @@ box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	border-radius: 0 0 20px 20px;
 	background: #999999;
 	z-index: 1;
-  }
-  
-  .computer-btm:before {
+}
+
+.computer-btm:before {
 	content: "";
 	position: absolute;
 	width: 42px;
 	height: 3px;
-	left: 50%; 
+	left: 50%;
 	top: 0;
 	margin-left: -21px;
 	border-radius: 0 0 5px 5px;
 	background: #555;
-  }
-  
-  .computer-keyboard {
+}
+
+.computer-keyboard {
 	width: 216px;
 	height: 35px;
 	bottom: -70px;
@@ -2618,21 +2635,20 @@ box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	box-shadow: 0 4px 0 #d8dbe1;
 	z-index: 2;
 	display: none;
-  }
-  
-  .computer-keyboard:before,
-  .computer-keyboard:after {
+}
+
+.computer-keyboard:before, .computer-keyboard:after {
 	content: "";
 	position: absolute;
 	top: 0;
 	z-index: 2;
-  }
-  
-  .computer-keyboard > div {
-	 position: absolute; 
-  }
-  
-  .computer-keyboard .computer-btm {
+}
+
+.computer-keyboard>div {
+	position: absolute;
+}
+
+.computer-keyboard .computer-btm {
 	background: #d8dbe1;
 	width: 244px;
 	height: 4px;
@@ -2640,87 +2656,85 @@ box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	bottom: -4px;
 	left: 50%;
 	margin-left: -122px;
-  }
-  
-  
-  .computer-keyboard:before {
+}
+
+.computer-keyboard:before {
 	border-left: 14px solid transparent;
 	border-right: 0px solid transparent;
 	border-bottom: 35px solid #e8ebf0;
 	left: -14px;
-  }
-  
-  .computer-keyboard:after {
+}
+
+.computer-keyboard:after {
 	border-right: 14px solid transparent;
 	border-left: 0px solid transparent;
-	border-bottom: 35px solid #e8ebf0; 
+	border-bottom: 35px solid #e8ebf0;
 	right: -14px;
-  }
-  
-  .computer-keys {
+}
+
+.computer-keys {
 	width: 220px;
 	margin: 4px auto;
 	text-align: center;
 	position: relative;
 	left: 50%;
 	margin-left: -110px;
-  }
-  
-  .computer-keys li {
+}
+
+.computer-keys li {
 	position: relative;
 	left: 50%;
 	background: #f4f5f7;
 	height: 4px;
 	margin: 0 0 3px -110px;
 	z-index: 4;
-  }
-  
-  .computer-keys li:nth-child(1) {
+}
+
+.computer-keys li:nth-child(1) {
 	width: 208px;
 	margin-left: -104px;
-  }
-  
-  .computer-keys li:nth-child(2) {
+}
+
+.computer-keys li:nth-child(2) {
 	width: 212px;
 	margin-left: -106px;
-  }
-  
-  .computer-keys li:nth-child(2) {
+}
+
+.computer-keys li:nth-child(2) {
 	width: 212px;
 	margin-left: -106px;
-  }
-  
-  .computer-keys li:nth-child(3) {
+}
+
+.computer-keys li:nth-child(3) {
 	width: 216px;
 	margin-left: -108px;
-  }
-  
-  .computer-keys li:nth-child(4) {
+}
+
+.computer-keys li:nth-child(4) {
 	width: 220px;
 	margin-left: -110px;
-  }
-  
-  .computer-keys li:before,
-  .computer-keys li:after {
+}
+
+.computer-keys li:before, .computer-keys li:after {
 	content: "";
 	position: absolute;
-  }
-  
-  .computer-keys li:before {
+}
+
+.computer-keys li:before {
 	border-left: 3px solid transparent;
 	border-right: 0px solid transparent;
 	border-bottom: 4px solid #f4f5f7;
 	left: -3px;
-  }
-  
-  .computer-keys li:after {
+}
+
+.computer-keys li:after {
 	border-right: 3px solid transparent;
 	border-left: 0px solid transparent;
 	border-bottom: 4px solid #f4f5f7;
 	right: -3px;
-  }
-  
-  .computer-phone {
+}
+
+.computer-phone {
 	width: 70px;
 	height: 140px;
 	position: absolute;
@@ -2731,56 +2745,55 @@ box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	border: 25px solid #2f343e;
 	border-left: 5px solid #2f343e;
 	border-right: 5px solid #2f343e;
-  }
-  
-  .computer-phone:before,
-  .computer-phone:after {
+}
+
+.computer-phone:before, .computer-phone:after {
 	content: "";
 	position: absolute;
 	left: 50%;
 	background: #474e5d;
-  }
-  
-  .computer-phone:before {
+}
+
+.computer-phone:before {
 	background: #474e5d;
 	width: 20px;
 	height: 4px;
 	margin-left: -10px;
 	top: -12px;
 	border-radius: 2px;
-  }
-  
-  .computer-phone:after {
+}
+
+.computer-phone:after {
 	width: 10px;
 	height: 10px;
 	border-radius: 10px;
 	bottom: -18px;
 	margin-left: -5px;
-  }
-  
-  .computer-phone .computer-screen {
+}
+
+.computer-phone .computer-screen {
 	width: 60px;
 	height: 90px;
 	position: relative;
 	overflow: hidden;
-  }
-  
-  .computer-phone .computer-content {
+}
+
+.computer-phone .computer-content {
 	background: url('img/mobile-pantheon.jpg') no-repeat transparent;
 	width: 60px;
 	left: 0%;
 	margin-left: 0px;
-  }
-  
-  .computer-phone .computer-txt {
+}
+
+.computer-phone .computer-txt {
 	width: 85%;
-  }
-  
-  .computer-phone .computer-txt > li {
+}
+
+.computer-phone .computer-txt>li {
 	height: 20px;
-  }
-	
-  .computer-shadow {
+}
+
+.computer-shadow {
 	position: absolute;
 	width: 350px;
 	height: 15px;
@@ -2788,23 +2801,23 @@ box-shadow: 5px 2px 8px 0px rgba(50, 50, 50, 0.5);
 	margin-left: -175px;
 	z-index: -1;
 	bottom: -20px;
-	background: radial-gradient(ellipse at center, rgba(204,204,204,1) 0%,rgba(204,204,204,1) 53%,rgba(204,204,204,1) 55%,rgba(204,204,204,0) 55%,rgba(204,204,204,0) 100%);
-  }
-  
-  .computer-laptop .computer-shadow {
+	background: radial-gradient(ellipse at center, rgba(204, 204, 204, 1) 0%, rgba(204, 204, 204, 1) 53%, rgba(204, 204, 204, 1) 55%, rgba(204, 204, 204, 0) 55%, rgba(204, 204, 204, 0) 100%);
+}
+
+.computer-laptop .computer-shadow {
 	width: 450px;
-	margin-left: -225px; 
+	margin-left: -225px;
 	bottom: -18px;
-  }
-  
-  .computer-keyboard .computer-shadow {
+}
+
+.computer-keyboard .computer-shadow {
 	bottom: -10px;
 	height: 10px;
-  }
-  
-  .computer-phone .computer-shadow {
+}
+
+.computer-phone .computer-shadow {
 	bottom: -30px;
 	margin-left: -50px;
 	height: 10px;
 	width: 100px
-  }
+}

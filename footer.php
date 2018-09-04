@@ -21,9 +21,9 @@
 			<div class="social-media-single">
 				<h3>Follow or Subscribe</h3>
 					<ul>
-						<li class="twitter-single"><a href="https://twitter.com/kai_dawei"><img src="//localhost:3000/wp-content/themes/html5blank-stable/img/twitter.svg" alt="twitter Logo" class="twitter"></a></li>
-						<li class="github-single"><a href="https://github.com/davidkartuzinski"><img src="//localhost:3000/wp-content/themes/html5blank-stable/img/github.svg" alt="github Logo" class="github"></a></li>
-						<li class="linkedin-single"><a href="https://www.linkedin.com/in/kaidawei/"><img src="//localhost:3000/wp-content/themes/html5blank-stable/img/linkedin.svg" alt="linkedin Logo" class="linnkedin"></a></li>
+						<li class="twitter-single"><a href="https://twitter.com/kai_dawei"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="twitter Logo" class="twitter"></a></li>
+						<li class="github-single"><a href="https://github.com/davidkartuzinski"><img src="<?php echo get_template_directory_uri(); ?>/img/github.svg" alt="github Logo" class="github"></a></li>
+						<li class="linkedin-single"><a href="https://www.linkedin.com/in/kaidawei/"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.svg" alt="linkedin Logo" class="linnkedin"></a></li>
 					</ul>
 			</div>
 			<!-- /footer -->
@@ -32,15 +32,15 @@
 
 
 			<div class="maserati">
-				<a href="/"><img src="//localhost:3000/wp-content/themes/html5blank-stable/img/dk-maserati-1.svg" alt="Logo" class="maserati"></a>
+				<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/orange-maserati.png" alt="Maserati" class="maserati"></a>
 				</div>
 
 				<div class="bottomlogo">
-				<a href="/"><img src="//localhost:3000/wp-content/themes/html5blank-stable/img/logo.png" alt="Logo" class="logo-img"></a>
+				<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img"></a>
 				</div>
 				<p>
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?> whilst original theme design Copyright <a href="https://www.caharrisdesign.com/webui/"> C A Harris (Visual Designer)</a>. <?php _e('Custom design developed on', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress with Gutenberg</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					&copy; <?php echo date('Y'); ?> Copyright <a href="https://kaidawei.me"><?php bloginfo('name'); ?></a>.  Original theme by and Maserati design &copy; Copyright 2010 - <?php echo date('Y'); ?> <a href="https://www.caharrisdesign.com/webui/"> C A Harris (Visual Designer)</a>. <?php _e('Custom design developed exclusively for use on ', 'html5blank'); ?>
+					<a href="//wordpress.org" title="WordPress">WordPress</a>.
 				</p>
 			</div>
 				<!-- /copyright -->

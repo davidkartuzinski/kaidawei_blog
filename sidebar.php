@@ -1,7 +1,3 @@
-
-
-
-
 </div> <!-- inside wrapper -->
 		</div>
 		<!-- /wrapper -->
@@ -15,7 +11,7 @@
 	<div class="footer-flare-right">
 	</div>
 </div> 
-	<h2>You can call me, "Kai Dawei"</h2>
+	<h2>Let's Work Together</h2>
 	<div class="social-media">
 	<h3>Find and Connect</h3><ul>
 	<li class="twitter"><a href="https://twitter.com/kai_dawei">Twitter</a></li>
