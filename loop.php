@@ -3,20 +3,7 @@
 	<!-- article -->
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<div class="blogroll-heading">
-		<!-- post title -->
-		<h2>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-		</h2>
-		<!-- /post title -->
 
-		<!-- post details -->
-		<span class="date">Originally Published: <?php the_time('F j, Y'); ?> </span><br>
-		<?php the_modified_date('F j, Y', '<span class="modified-date">Updated: ', '</span>'); ?><br>
-		<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-		<!-- /post details -->
-		</div> <!-- blogroll-heading -->
-		
 		<div class="blogroll-container">
 		<!-- post thumbnail -->
 		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
@@ -26,10 +13,34 @@
 		<?php endif; ?>
 		<!-- /post thumbnail -->
 
-		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 
-		<?php edit_post_link(); ?>
 		</div> <!-- .blogroll-container -->
+
+
+		<div class="blogroll-heading">
+
+
+
+		<!-- post title -->
+		<h2>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+		</h2>
+		<!-- /post title -->
+	
+
+		<!-- post details -->
+		<div class="post-meta">
+		<span class="date">Originally Published:<br> <?php the_time('F j, Y'); ?> </span>
+		<?php the_modified_date('F j, Y', '<span class="modified-date">Updated:<br> ', '</span>'); ?>
+		<span class="author"><?php _e( 'Published by: &nbsp;&nbsp;&nbsp;  <br>', 'html5blank' ); ?> <span><?php the_author_posts_link(); ?></span></span>
+		</div>
+		<!-- /post details -->	
+		<?php edit_post_link(); ?>
+
+		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+		</div> <!-- blogroll-heading -->
+		
+
 
 	</article>
 	<!-- /article -->

@@ -9,13 +9,13 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
 
-			<div class="acf-introduction"><?php the_field( 'introduction' ); ?></div>
+			<div class="acf-introduction">
+				
+			<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+			
+			<p><?php the_field( 'introduction' ); ?></p>
+			</div>
 
 			<div class="blog-feature">
 				<!-- post thumbnail -->
@@ -29,9 +29,9 @@
 
 				<!-- post details -->
 				<div class="post-meta">
-					<span class="date">Originally Published:<br> <?php the_time('F j, Y'); ?> </span><br>
-					<?php the_modified_date('F j, Y', '<span class="modified-date">Updated:<br> ', '</span>'); ?><br>
-					<span class="author"><?php _e( 'Published by <br>', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
+					<span class="date">Originally Published:<br> <?php the_time('F j, Y'); ?> </span>
+					<?php the_modified_date('F j, Y', '<span class="modified-date">Updated:<br> ', '</span>'); ?>
+					<span class="author"><?php _e( 'Published by:&nbsp;&nbsp;&nbsp;  <br>', ' &nbsp; html5blank' ); ?> <span><?php the_author_posts_link(); ?></span></span>
 					<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
 				</div>
 				<!-- /post details -->
@@ -49,6 +49,19 @@
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
 			<?php comments_template(); ?>
+
+			<h2>Let's Work Together</h2>
+	<div class="arrow-box">
+	<div class="arrow-down"></div></div>
+
+	<div class="social-media">
+	<h3>Find and Connect</h3>
+		<ul>
+	<li class="twitter"><a href="https://twitter.com/kai_dawei">Twitter</a></li>
+	<li class="github"><a href="https://github.com/davidkartuzinski">GitHub</a></li>
+	<li class="linkedin"><a href="https://www.linkedin.com/in/kaidawei/">LinkedIn</a></li>
+</ul>
+	</div>
 
 		</article>
 		<!-- /article -->

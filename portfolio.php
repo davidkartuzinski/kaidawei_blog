@@ -9,9 +9,7 @@
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<h1><?php the_title(); ?></h1>
-
-				<div class="acf-introduction"><?php the_field( 'introduction' ); ?></div>
+				<div class="acf-introduction"><h1><?php the_title(); ?></h1><p><?php the_field( 'introduction' ); ?></p></div>
 
 				<?php the_content(); ?>
 

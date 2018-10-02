@@ -4,7 +4,7 @@
 		<!-- section -->
 		<section>
 
-			<h1><?php _e( 'Archives', 'html5blank' ); ?></h1>
+			<div class="acf-introduction"><h1><?php _e( 'Archives', 'html5blank' ); ?></h1></div>
 
 			<?php get_template_part('loop'); ?>
 

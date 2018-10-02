@@ -5,16 +5,21 @@
 				
 						<ul class="left-footer-nav">
 								<li><a href="/">Home</a></li>
-								<li><a href="/portfolio-work/">Portfolio & Work</a></li>
+								<li><a href="/about-me/">About Me</a></li>
 						</ul>
 					</div>
 					<div class="right-footer-div">
 						<ul class="right-footer-nav">
 							<li><a href="/blog/">Blog</a></li>
-							<li><a href="/contact-me/">Contact me</a></li>
+							<li><a href="/contact-me/">Contact</a></li>
 						</ul>
 					</div>
 				</div>
+				<div class="center-footer-div">
+						<ul class="center-footer-nav">
+						<li><a href="/portfolio-work/">Portfolio & Work</a></li>
+						</ul>
+					</div>
 
 			</footer>
 
@@ -51,6 +56,12 @@
 
 		<?php the_field( 'javascript_snippets' ); ?>	
 		
+		<!-- reload page on change of orientation -->
+
+		<script>
+			window.onorientationchange = function() { window.location.reload(); };
+		</script>
+
 		<!-- analytics -->
 		<script>
 		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
