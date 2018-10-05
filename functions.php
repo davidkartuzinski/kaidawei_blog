@@ -80,7 +80,7 @@ function html5blank_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul class="mobile-toggleable-menu mobile-left" id="plain-menu">%3$s</ul>',
+		'items_wrap'      => '<input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle mobile-menu-toggle-button"><ul class="mobile-toggleable-menu mobile-left" id="plain-menu">%3$s</ul><label class="mobile-left mobmenu-toggle" for="mobile-menu-toggle">+</label>',
 		'depth'           => 0,
 		'walker'          => ''
 		)

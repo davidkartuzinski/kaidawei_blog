@@ -44,9 +44,7 @@
 					
 					<!-- nav -->
 					<nav class="nav menu" role="navigation">
-						<input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle mobile-menu-toggle-button">
 						<?php html5blank_nav(); ?>
-						<label class="mobile-left mobmenu-toggle" for="mobile-menu-toggle">+</label>
 					</nav>
 					<!-- /nav -->
 
