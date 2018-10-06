@@ -1,0 +1,8 @@
+Add Introductory and Orientation text to CSS
+Separate and test @supports for all code in the CSS https://davidwalsh.name/css-supports
+Test and optimize for Microsoft browsers. IE 9+ and Edge
+Backwards compatibilitiy check for accessibility
+Remove all images and change to SVG
+Update and confront all content
+Create a block just for the flares and refactor the code to incorporate
+Refactor CSS to work 100% on variables for everything color related.
